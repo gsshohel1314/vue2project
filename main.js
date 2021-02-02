@@ -2,14 +2,14 @@ new Vue({
     el: "#app",
 
     data: {
-        title: "Vue 2 Project",
+        title: "vue js 2 project",
         isItTrue: true,
-        cars:["Toyota", "BMW", "Audi"],
-        MyObject:{
+        cars: ['Toyota', 'BMW', 'Audi'],
+        MyObject: {
             name: "Shohel",
         },
         MyFunk: ()=>{
-            return "Hello World";
-        },
-    },
+            return "Hello World"
+        }
+    }
 });
