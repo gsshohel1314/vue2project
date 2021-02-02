@@ -14,16 +14,14 @@ new Vue({
     },
 
     methods: {
-        MyMethod(){
-            return "Hello Shohel";
+        myMethod(){
+            return "Hii! I am shohel";
         },
-
-        MyMethod2(){
+        returnValue(){
             return this.title;
         },
-
         returnArray(){
-            return this.cars[2];
+            return this.cars[0];
         }
-    },
+    }
 });
