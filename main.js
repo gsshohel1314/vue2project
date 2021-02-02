@@ -1,15 +1,15 @@
 new Vue({
-     el: "#app",
+    el: "#app",
 
-     data: {
-         title: "Vue 2 Project",
-         isItTrue: true,
-         cars: ['Toyota', 'BMW', 'Alion', 'Audi'],
-         MyName:{
-            name:"Shohel",
-         },
-         MyFunk: ()=>{
+    data: {
+        title: "Vue 2 Project",
+        isItTrue: true,
+        cars:["Toyota", "BMW", "Audi"],
+        MyObject:{
+            name: "Shohel",
+        },
+        MyFunk: ()=>{
             return "Hello World";
-         },
-     }
+        },
+    },
 });
