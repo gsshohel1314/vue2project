@@ -10,6 +10,20 @@ new Vue({
         },
         MyFunk: ()=>{
             return "Hello World"
+        },
+    },
+
+    methods: {
+        MyMethod(){
+            return "Hello Shohel";
+        },
+
+        MyMethod2(){
+            return this.title;
+        },
+
+        returnArray(){
+            return this.cars[2];
         }
-    }
+    },
 });
