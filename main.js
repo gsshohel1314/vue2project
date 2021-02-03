@@ -37,3 +37,19 @@ new Vue({
         myHtml: "<strong>I am a programmer</strong>",
     },
 });
+
+new Vue({
+    el: "#conditionalRendering",
+    
+    data:{
+        userName: "shohel",
+        userAge: 16,
+        allowedAge:18,
+    },
+
+    methods:{
+        changeUser(){
+            return this.userName === "shohel" ? true: false;
+        }
+    },
+});

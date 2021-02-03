@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Randering</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+</head>
+<body>
+    <div id="conditionalRendering">
+        <p v-if="userAge >= allowedAge">
+            You are good to go.
+        </p>
+        <p v-else-if="changeUser()">
+            You are good.
+        </p>
+        <p v-else>
+            You are not good to go.
+        </p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
