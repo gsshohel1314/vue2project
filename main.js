@@ -33,5 +33,7 @@ new Vue({
         src: "https://picsum.photos/id/237/200/300",
         alt: "This is a dog",
         link: "http://google.com",
+        myText: "Hii Shohel",
+        myHtml: "<strong>Hello World</strong>",
     },
 });

@@ -9,7 +9,11 @@
 <body>
     <div id="directive">
         <img v-bind:src="src" v-bind:alt="alt">
+        <hr>
         <a v-bind:href="link">Cleck Me</a>
+        <hr>
+        <p v-text="myText"></p>
+        <p v-html="myHtml"></p>
     </div>
 
     <script src="main.js"></script>
