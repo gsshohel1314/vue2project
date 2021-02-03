@@ -53,3 +53,10 @@ new Vue({
         }
     },
 });
+
+new Vue({
+    el: "#vshow",
+    data: {
+        userName: "rafi",
+    }
+});
