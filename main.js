@@ -60,3 +60,15 @@ new Vue({
         userName: "rafi",
     }
 });
+
+new Vue({
+    el: "#vfor",
+    data: {
+        cars: ['BMW', 'Ford', 'Toyota'],
+        user: {
+            name: "Luffy",
+            age: 25,
+            country: "japan",
+        },
+    },
+});

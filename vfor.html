@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue js</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+</head>
+<body>
+    <div id="vfor">
+        <p v-for="(car, index) in cars">
+            {{ index }} : {{ car }}
+        </p>
+
+        <hr>
+
+        <p v-for="(value, key, index) in user">
+            {{ index }} : {{ key }} : {{ value }}
+        </p>
+
+        <hr>
+
+        <p v-for="n in 10">
+            {{ n }}
+        </p>
+    </div>    
+
+    <script src="main.js"></script>
+</body>
+</html>
