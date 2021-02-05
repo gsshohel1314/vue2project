@@ -68,7 +68,7 @@ new Vue({
         user: {
             name: "Luffy",
             age: 25,
-            country: "japan",
+            country: "Japan",
         },
     },
 });

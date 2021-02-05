@@ -8,22 +8,18 @@
 </head>
 <body>
     <div id="vfor">
-        <p v-for="(car, index) in cars">
+        <p v-for="(car, index, key) in cars">
             {{ index }} : {{ car }}
         </p>
-
         <hr>
-
         <p v-for="(value, key, index) in user">
             {{ index }} : {{ key }} : {{ value }}
         </p>
-
         <hr>
-
         <p v-for="n in 10">
             {{ n }}
         </p>
-    </div>    
+    </div>  
 
     <script src="main.js"></script>
 </body>
