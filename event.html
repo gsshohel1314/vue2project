@@ -11,22 +11,22 @@
         .box{
             background-color: red;
             width: 300px;
-            height: 300px;
+            height: 250px;
         }
     </style>
 </head>
 <body>
     <div id="event1">
-       <h1>{{ name }}</h1>
-       <button v-on:click="updateName">Click</button>
-       <br><br>
-       <div  v-on:mousemove="getCoord" class="box">
+        <h1>{{ name }}</h1>
+        <button v-on:click="updateName">Click Me</button>
+        <br><br>
+        <div v-on:mousemove="getCoord" class="box">
             Hover Me
-       </div>
-       <h3>X: {{ x }}</h3>
-       <h3>Y: {{ y }}</h3>
+        </div>
+        <h4>X: {{ x }}</h4>
+        <h4>Y: {{ y }}</h4>
     </div>
-    
+
     <script src="main.js"></script>
 </body>
 </html>

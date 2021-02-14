@@ -90,13 +90,13 @@ new Vue({
 new Vue({
     el: "#event1",
     data: {
-        name: "Shohel",
+        name: "Luffy",
         x: 0,
         y: 0,
     },
     methods: {
         updateName(){
-            this.name= "Rana";
+            this.name = "Raffe";
         },
         getCoord(event){
             this.x = event.clientX;
