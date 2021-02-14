@@ -10,10 +10,10 @@
 <body>
     <div id="vmodel">
         <form v-on:submit.prevent="formHandle">
-            <label> First Name:</label>
-            <input v-model="formData.firstName" type="text"><br><br>
-            <label> Last Name:</label>
-            <input v-model="formData.lastName" type="text"><br><br>
+            <label> First Name: </label>
+            <input type="text" v-model="formData.firstName"><br><br>
+            <label> Last Name: </label>
+            <input type="text" v-model="formData.lastName"><br><br>
             <button type="submit">Submit</button>
         </form>
     </div>

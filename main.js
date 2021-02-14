@@ -124,7 +124,7 @@ new Vue({
 new Vue({
     el: "#vmodel",
     data: {
-        formData: {
+        formData:{
             firstName: "",
             lastName: "",
         },
