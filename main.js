@@ -104,3 +104,20 @@ new Vue({
         },
     },
 });
+
+new Vue({
+    el: "#argandmodi",
+    data: {
+        name: "Luffy",
+    },
+    methods: {
+        updateName(newName, event){
+            this.name = newName;
+            console.log(event);
+        },
+        handleForm(){
+            console.log('Submit Form');
+        },
+    },
+
+});
