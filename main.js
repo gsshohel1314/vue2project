@@ -120,3 +120,18 @@ new Vue({
         },
     },
 });
+
+new Vue({
+    el: "#vmodel",
+    data: {
+        formData: {
+            firstName: "",
+            lastName: "",
+        },
+    },
+    methods: {
+        formHandle(){
+            console.log(this.formData);
+        },
+    },
+});
