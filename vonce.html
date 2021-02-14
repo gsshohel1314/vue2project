@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directive</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+</head>
+<body>
+    <div id="vonce">
+        <h1>{{ name }}</h1>
+        <h1 v-once>{{ name }}</h1>
+        {{ update() }}
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

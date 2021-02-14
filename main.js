@@ -72,3 +72,17 @@ new Vue({
         },
     },
 });
+
+new Vue({
+    el: "#vonce",
+    data: {
+        name: "Luffy",
+    },
+    methods: {
+        update(){
+            setTimeout(()=>{
+                this.name="Raffe";
+            },2000);
+        },
+    },
+});
