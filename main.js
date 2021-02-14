@@ -116,8 +116,7 @@ new Vue({
             console.log(event);
         },
         handleForm(){
-            console.log('Submit Form');
+            console.log('Form Submit');
         },
     },
-
 });
