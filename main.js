@@ -76,12 +76,12 @@ new Vue({
 new Vue({
     el: "#vonce",
     data: {
-        name: "Luffy",
+        name: "Shohel",
     },
     methods: {
         update(){
             setTimeout(()=>{
-                this.name="Raffe";
+                this.name= "Rana";
             },2000);
         },
     },
