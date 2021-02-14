@@ -86,3 +86,21 @@ new Vue({
         },
     },
 });
+
+new Vue({
+    el: "#event1",
+    data: {
+        name: "Shohel",
+        x: 0,
+        y: 0,
+    },
+    methods: {
+        updateName(){
+            this.name= "Rana";
+        },
+        getCoord(event){
+            this.x = event.clientX;
+            this.y = event.clientY;
+        },
+    },
+});
