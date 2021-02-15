@@ -135,3 +135,22 @@ new Vue({
         },
     },
 });
+
+new Vue({
+    el: "#computed",
+    data: {
+        a: 0,
+        b: 0,
+        salary: 10,
+    },
+    computed: {
+        addToA(){
+            console.log("add a");
+            return this.a + this.salary;
+        },
+        addToB(){
+            console.log("add b");
+            return this.b + this.salary;
+        },
+    },
+});
