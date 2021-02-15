@@ -195,3 +195,15 @@ const app1 = new Vue({
 setTimeout(()=>{
     app1.$mount(mountandtemp);
 }, 2000);
+
+Vue.component('comp1',{
+    data(){
+        return {
+            name: "Luffy",
+        }
+    },
+    template: `<h1>{{ name }}</h1>`,
+});
+new Vue({
+    el: "#compo",
+});
