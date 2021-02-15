@@ -154,3 +154,12 @@ new Vue({
         },
     },
 });
+
+new Vue({
+    el: "#shorthand",
+    data: {
+        a: 0,
+        link: "https://www.google.com/",
+        name: "",
+    },
+});
