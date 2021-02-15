@@ -182,3 +182,16 @@ const app12 = new Vue({
         value: "2nd",
     },
 });
+
+const temp = `<h3>My name is {{ name }}</h3>`;
+const app1 = new Vue({
+    
+    data: {
+        name: "Luffy",
+    },
+    template: temp,
+});
+
+setTimeout(()=>{
+    app1.$mount(mountandtemp);
+}, 2000);
