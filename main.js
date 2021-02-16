@@ -207,3 +207,43 @@ Vue.component('comp1',{
 new Vue({
     el: "#compo",
 });
+
+new Vue({
+    el: "#lifecycle",
+    data: {
+        name: "Luffy",
+    },
+    methods: {
+        updateName(){
+            this.name= "Shohel";
+        },
+        destroy(){
+            this.$destroy();
+        },
+    },
+
+    beforeCreate() {
+        console.log("Running before create");
+    },
+    created() {
+        console.log("Running created");
+    },
+    beforeMount() {
+        console.log("Running before mount");
+    },
+    mounted() {
+        console.log("Running mounted");
+    },
+    beforeUpdate() {
+        console.log("Before update");
+    },
+    updated() {
+        console.log("Updated");
+    },
+    beforeDestroy() {
+        console.log('Before destroy');
+    },
+    destroyed() {
+        console.log('Destroyed');
+    },
+});
