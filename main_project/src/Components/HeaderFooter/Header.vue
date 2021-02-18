@@ -1,5 +1,7 @@
 <template>
-    <P>This is header part</P>
+    <div>
+        This is header part
+    </div>
 </template>
 
 <script>
@@ -8,6 +10,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+    div{
+        color: red;
+    }
 </style>
