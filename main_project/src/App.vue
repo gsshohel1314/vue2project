@@ -1,8 +1,7 @@
 <template>
   <div>
-    <appHeader/>
-    <p> Name is : {{ name }} </p>
-    <p> Age is : {{ age }} </p>
+    <appHeader :myStudents="students"/>
+  
     <appFooter/>
   </div>
 </template>
@@ -14,8 +13,7 @@ import appFooter from './Components/HeaderFooter/Footer';
 export default {
   data() {
     return {
-      name: "Shohel",
-      age: 25,
+      students: ['luffy', 'rafee', 'jemee', 'sammy'],
     }
   },
 
