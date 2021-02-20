@@ -1,13 +1,7 @@
 <template>
   <div>
     <compListHelper>
-      <ul slot="listItem">
-        <li v-for="li in list" :key="li">
-          {{ li }}
-        </li>
-      </ul>
-      <p slot="para">user also knows php</p>
-      <p :slot="loder">See you again</p>
+      
     </compListHelper>
   </div>
 </template>
