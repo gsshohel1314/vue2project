@@ -1,37 +1,39 @@
 <template>
   <div>
-    <appHeader 
-      v-bind:firstName = "fName"
-    />
-  
-    <appFooter
-      v-bind:lastName = "lName"
-    />
+    <compListHelper>
+      <ul slot="listItem">
+        <li v-for="li in list" :key="li">
+          {{ li }}
+        </li>
+      </ul>
+      <p slot="para">user also knows php</p>
+      <p :slot="loder">See you again</p>
+    </compListHelper>
   </div>
 </template>
 
 <script>
-import appHeader from './Components/HeaderFooter/Header';
-import appFooter from './Components/HeaderFooter/Footer';
-
+import compListHelper from './Components/listHelper'
 export default {
-  data() {
-    return {
-      fName: "Jon",
-      lName: "Doe",
+  data(){
+    return{
+      list: ['html', 'css', 'javaScript'],
+      loder: '',
     }
   },
 
-  components: {
-    appHeader,
-    appFooter,
-  }
+  components:{
+    compListHelper,
+  },
+
+  created() {
+    setTimeout(()=>{
+      this.loder= "other";
+    }, 2000)
+  },
 }
 </script>
 
 <style>
-  body{
-    margin: 0% auto;
-    font-family: 'Roboto', sans-serif;
-  }
+  
 </style>
