@@ -1,6 +1,11 @@
 <template>
   <div>
-    <appHeader :myStudents="students"/>
+    <appHeader 
+      v-bind:firstName = "fName"
+      v-bind:lastName = "lName"
+      v-bind:age = "myAge"
+      v-on:updateValue = "fName = $event"
+    />
   
     <appFooter/>
   </div>
@@ -13,7 +18,9 @@ import appFooter from './Components/HeaderFooter/Footer';
 export default {
   data() {
     return {
-      students: ['luffy', 'rafee', 'jemee', 'sammy'],
+      fName: "Jon",
+      lName: "Doe",
+      myAge: 25
     }
   },
 
