@@ -2,22 +2,22 @@
     <div>
         <p>This is header part</p>
         <p>First Name: {{ firstName }}</p>
-        <p>Last Name: {{ lastName }}</p>
-        <p>Age: {{ age }}</p>
+
         <button v-on:click="updateName">Click Me</button>
+        <hr>
     </div>
 </template>
 
 <script>
+import {bus} from '../../main'
 export default {
     props: {
         firstName: String,
-        lastName: String,
-        age: Number
     },
     methods: {
         updateName(){
-            this.$emit('updateValue', 'luffy');
+            // this.firstName = "jack";
+            bus.$emit('changeName', this.firstName = "jack");
         }
     },
 }

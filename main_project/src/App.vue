@@ -2,12 +2,11 @@
   <div>
     <appHeader 
       v-bind:firstName = "fName"
-      v-bind:lastName = "lName"
-      v-bind:age = "myAge"
-      v-on:updateValue = "fName = $event"
     />
   
-    <appFooter/>
+    <appFooter
+      v-bind:lastName = "lName"
+    />
   </div>
 </template>
 
@@ -20,7 +19,6 @@ export default {
     return {
       fName: "Jon",
       lName: "Doe",
-      myAge: 25
     }
   },
 
