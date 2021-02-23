@@ -1,20 +1,22 @@
 <template>
   <div class="container">
-    <p>{{ text | upperCase | removeText}}</p>
+    <compClint/>
+    <compUser/>
   </div>
 </template>
 
 <script>
+import compClint from './components/Client'
+import compUser from './components/User'
 export default {
   data(){
     return{
-      text: "Hello World",
+      
     }
   },
-  filters: {
-    upperCase(value){
-      return value.toUpperCase();
-    }
+  components:{
+    compClint,
+    compUser,
   }
 }
 </script>
